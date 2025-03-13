@@ -1,7 +1,7 @@
 function calcularDigitos(cpf) {
     var soma = 0, peso = 10
 
-    // Calcula o primeiro dígito
+    
     for (var i = 0; i < 9; i++) {
         soma += cpf[i] * peso--
     }
@@ -11,7 +11,7 @@ function calcularDigitos(cpf) {
     cpf += primeiro
 
     soma = 0, peso = 11
-    // Calcula o segundo dígito
+    
     for (var i = 0; i < 10; i++) {
         soma += cpf[i] * peso--
     }
